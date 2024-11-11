@@ -1,0 +1,54 @@
+{
+    "top": {
+      "title": "Lorem ullamco ",
+      "images": [
+        {
+          "src": "image1.jpg",
+          "alt": "Description of first image"
+        },
+        {
+          "src": "image2.jpg",
+          "alt": "Description of second image"
+        }
+      ],
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur eiusmod consectetur proident Lorem reprehenderit esse do anim velit in aliquip dolore ut officia. Consectetur reprehenderit proident do exercitation eu. Sunt fugiat pariatur elit est laboris quis. Esse mollit incididunt quis amet. Qui non irure incididunt laborum nisi cillum consequat aliquip aliquip cillum in. Ut excepteur labore voluptate tempor cupidatat dolor eiusmod do ipsum Lorem cupidatat do labore.Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur. Non excepteur sunt reprehenderit sit ex ullamco eiusmod Lorem incididunt nisi mollit nostrud. Irure velit enim elit minim commodo qui culpa cillum duis fugiat consequat pariatur."
+    },
+    "bottom": {
+      "sections": [
+        {
+          "image": {
+            "src": "image3.jpg",
+            "alt": "Description of third image"
+          },
+          "text": {
+            "title": "Lorem ipsum",
+            "subsections": [
+              {
+                "subtitle": "Excepteur eiusmod consectetur",
+                "content": "Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur..."
+              },
+              {
+                "subtitle": "Quis aliqua reprehenderit",
+                "content": "Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur..."
+              },
+              {
+                "subtitle": "Ad sit cillum amet duis quis commodo",
+                "content": "Proident dolore nisi eiusmod excepteur aliquip esse ut excepteur..."
+              }
+            ]
+          }
+        },
+        {
+          "text": {
+            "title": "Mollit aliquip do ipsum consectetur",
+            "content": "Culpa cillum ea minim veniam nulla commodo deserunt do irure laboris. Veniam eiusmod laboris aliquip..."
+          },
+          "image": {
+            "src": "image4.jpg",
+            "alt": "Description of fourth image"
+          }
+        }
+      ]
+    }
+  }
+  
