@@ -1,0 +1,26 @@
+.hero-section {
+    text-align: center;
+    padding: var(--spacing-large);
+    background-color: var(--color-background);
+    font-family: var(--font-family-sans);
+}
+
+.hero-title {
+    font-size: var(--font-size-40);
+    font-weight: var(--font-weight-regular);
+    margin-bottom: var(--spacing-medium);
+}
+
+.hero-images {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-medium);
+}
+
+.hero-content {
+    margin-top: var(--spacing-medium); 
+    font-size: var(--font-size-16);    
+    font-weight: var(--font-weight-regular); 
+    line-height: 22px;                
+    color: var(--color-primary);      
+}

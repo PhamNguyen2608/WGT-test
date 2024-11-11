@@ -1,0 +1,6 @@
+@import './global/variables.css';
+@import './global/typography.css';
+@import './components/header.css';
+@import './components/hero-section.css';
+@import './components/content-section.css';
+

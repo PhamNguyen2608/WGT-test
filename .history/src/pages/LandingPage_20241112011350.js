@@ -14,27 +14,24 @@ export default class LandingPage {
 
         try {
             const pageData = await this.getDataService.getData();
-            const page = pageData.page;
-            console.log(pageData)
+
             // Render Header
-            const header = new Header({ title: page.header.title });
+            const header = new Header({ title: pageData.header.title });
             container.appendChild(header.render());
 
             // Render HeroSection
             const heroSection = new HeroSection({
-                images: page.heroSection.images,
-                content: page.heroSection.content,
+                images: pageData.heroSection.images,
+                content: pageData.heroSection.content,
             });
             container.appendChild(heroSection.render());
 
-            // Render ContentSections
             if (Array.isArray(page.contentSections)) {
                 page.contentSections.forEach((sectionData, index) => {
                     const contentSection = new ContentSection({
                         image: sectionData.image,
                         text: sectionData.text,
-                        subtitle: sectionData.subtitle,
-                        reverse: index % 2 === 1,
+                        reverse: index % 2 === 1, 
                     });
                     container.appendChild(contentSection.render());
                 });

@@ -2,7 +2,7 @@ import Header from '../components/Header.js';
 import HeroSection from '../components/HeroSection.js';
 import ContentSection from '../components/ContentSection.js';
 import GetDataService from '../services/getDataService.js';
-
+    
 export default class LandingPage {
     constructor() {
         this.getDataService = new GetDataService(); 
@@ -14,33 +14,25 @@ export default class LandingPage {
 
         try {
             const pageData = await this.getDataService.getData();
-            const page = pageData.page;
-            console.log(pageData)
+
             // Render Header
-            const header = new Header({ title: page.header.title });
+            const header = new Header({ title: pageData.header.title });
             container.appendChild(header.render());
 
             // Render HeroSection
             const heroSection = new HeroSection({
-                images: page.heroSection.images,
-                content: page.heroSection.content,
+                images: pageData.heroSection.images,
+                content: pageData.heroSection.content,
             });
             container.appendChild(heroSection.render());
 
-            // Render ContentSections
-            if (Array.isArray(page.contentSections)) {
-                page.contentSections.forEach((sectionData, index) => {
-                    const contentSection = new ContentSection({
-                        image: sectionData.image,
-                        text: sectionData.text,
-                        subtitle: sectionData.subtitle,
-                        reverse: index % 2 === 1,
-                    });
-                    container.appendChild(contentSection.render());
+            pageData.contentSections.forEach((sectionData) => {
+                const contentSection = new ContentSection({
+                    image: sectionData.image,
+                    text: sectionData.text,
                 });
-            } else {
-                console.warn('Content sections are not an array:', page.contentSections);
-            }
+                container.appendChild(contentSection.render());
+            });
         } catch (error) {
             console.error('Error rendering LandingPage:', error);
             container.textContent = 'Failed to load content.';

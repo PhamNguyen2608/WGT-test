@@ -7,9 +7,11 @@ export default class GetDataService {
             }
             const data = await response.json(); 
 
-          
+            if (!data?.page?.header || !data?.page?.heroSection || !data?.page?.contentSections) {
+                throw new Error('Invalid data format');
+            }
 
-            return data; 
+            return data.page; 
         } catch (error) {
             console.error('Error fetching data:', error);
             throw error;

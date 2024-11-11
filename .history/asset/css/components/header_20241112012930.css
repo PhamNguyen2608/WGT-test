@@ -1,0 +1,12 @@
+.header {
+    color: var(--color-primary);
+    text-align: center;
+    padding: var(--spacing-large);
+    background-color: var(--color-background);
+    font-size: var(--font-size-40);
+    font-weight: var(--font-weight-regular);
+}
+
+.header-title {
+  
+}

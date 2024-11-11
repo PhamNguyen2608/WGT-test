@@ -19,7 +19,7 @@
     "contentSections": [
       {
         "image": {
-          "src": "asset/images/image-bot-1.jpg",
+          "src": "asset/images/image-bottom-1.png",
           "alt": "Description of third image"
         },
         "text": {
@@ -42,7 +42,7 @@
       },
       {
         "image": {
-          "src": "asset/images/image-bot-2.png",
+          "src": "asset/images/image-bottom-2.png",
           "alt": "Description of fourth image"
         },
         "text": {

@@ -33,7 +33,6 @@ export default class LandingPage {
                     const contentSection = new ContentSection({
                         image: sectionData.image,
                         text: sectionData.text,
-                        subtitle: sectionData.subtitle,
                         reverse: index % 2 === 1,
                     });
                     container.appendChild(contentSection.render());

@@ -1,0 +1,15 @@
+.hero-section {
+    text-align: center;
+    padding: var(--spacing-large);
+    background-color: var(--color-background);
+}
+
+.hero-images {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-medium);
+}
+
+.hero-content {
+    margin-top: var(--spacing-medium);
+}
