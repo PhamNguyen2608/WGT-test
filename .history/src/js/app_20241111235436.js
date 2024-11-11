@@ -18,5 +18,8 @@ export default class App {
     render(){  
         this.setupRouter();
         this.router.listen(this.rootElement);
+        this.components.forEach(component => {
+            this.rootElement.appendChild(component.render());
+        });
     }
 }

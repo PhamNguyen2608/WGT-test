@@ -1,5 +1,5 @@
 import Router from './router.js';
-import LandingPage from '../pages/LandingPage.js';
+import LandingPage from '../components/LandingPage.js';
 
 
 export default class App {
@@ -18,5 +18,8 @@ export default class App {
     render(){  
         this.setupRouter();
         this.router.listen(this.rootElement);
+        this.components.forEach(component => {
+            this.rootElement.appendChild(component.render());
+        });
     }
 }
