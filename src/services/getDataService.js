@@ -1,4 +1,4 @@
-export default class getDataService {
+export default class GetDataService {
     async getData() {
         try {
             const response = await fetch('https://phamnguyen2608.github.io/WGT-test/src/data/data.json');
