@@ -6,7 +6,7 @@ import GetData from '../services/getData.js';
 
 export default class LandingPage {
     constructor() {
-        this.getData = new GetData(); 
+        this.getDataService = new GetDataService(); 
     }
 
     async render() {
@@ -14,7 +14,7 @@ export default class LandingPage {
         container.className = 'landing-page';
 
         try {
-            const pageData = await this.getData.getData();
+            const pageData = await this.getDataService.getData();
             const page = pageData.page;
 
             // Header Section

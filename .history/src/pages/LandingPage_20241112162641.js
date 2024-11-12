@@ -1,12 +1,13 @@
 import Header from '../components/Header.js';
 import HeroSection from '../components/HeroSection.js';
 import ContentSection from '../components/ContentSection.js';
-import GetData from '../services/getData.js';
+import GetDataService from '../services/getDataService.js';
+
 
 
 export default class LandingPage {
     constructor() {
-        this.getData = new GetData(); 
+        this.getDataService = new GetDataService(); 
     }
 
     async render() {
@@ -14,7 +15,7 @@ export default class LandingPage {
         container.className = 'landing-page';
 
         try {
-            const pageData = await this.getData.getData();
+            const pageData = await this.getDataService.getData();
             const page = pageData.page;
 
             // Header Section
