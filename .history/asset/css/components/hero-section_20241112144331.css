@@ -29,7 +29,5 @@
     line-height: 22px;
     color: var(--color-primary);
     text-align: center;
-    white-space: pre-wrap;
-    margin-block-start: var(--spacing-large);
+    white-space: pre-line;
 }
-

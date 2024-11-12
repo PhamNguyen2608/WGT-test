@@ -33,11 +33,13 @@
 .content-title {
     font-size: var(--font-size-64);           
     font-weight: var(--font-weight-regular);          
+    line-height: var(--line-height-2-0);         
     color: var(--color-primary);            
     margin-bottom: var(--spacing-small);
 }
 
 .content-subtitle {
+    font-family: var(--font-family-sans);
     font-size: var(--font-size-20);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-2-0);

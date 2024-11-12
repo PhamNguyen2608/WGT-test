@@ -1,0 +1,39 @@
+/* Main container */
+.landing-page {
+    width: calc(100% - 63px);
+    max-width: 1440px;
+    margin: 0 auto;
+    /* padding: 0 31.5px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header section */
+.header {
+    width: 100%;
+    margin-bottom: var(--spacing-x-large);
+}
+
+.header__title {
+    font-size: var(--font-size-32);
+    color: var(--color-primary);
+    text-align: center;
+}
+
+/* Hero section container */
+.hero-section {
+    width: 100%;
+    padding: 0;
+    margin-bottom: var(--spacing-xx-large);
+}
+
+/* Content sections grid container */
+.content-sections-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: var(--spacing-small);
+} 

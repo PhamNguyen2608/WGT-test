@@ -26,10 +26,8 @@
     margin: 0 auto;
     font-size: var(--font-size-16);  
     font-weight: var(--font-weight-regular);
-    line-height: 22px;
+    line-height: 30px;
     color: var(--color-primary);
     text-align: center;
-    white-space: pre-wrap;
-    margin-block-start: var(--spacing-large);
+    white-space: pre-line;
 }
-

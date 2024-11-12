@@ -23,13 +23,8 @@
 
 .hero-content {
     max-width: 800px;
-    margin: 0 auto;
-    font-size: var(--font-size-16);  
-    font-weight: var(--font-weight-regular);
-    line-height: 22px;
-    color: var(--color-primary);
-    text-align: center;
-    white-space: pre-wrap;
-    margin-block-start: var(--spacing-large);
+    margin: 0;
+    font-size: var(--font-size-16);    
+    line-height: 22px;                
+    color: var(--color-primary);      
 }
-

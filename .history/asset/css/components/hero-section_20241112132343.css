@@ -1,0 +1,25 @@
+.hero-section {
+    text-align: center;
+    padding: var(--spacing-large) 0;
+}
+
+.hero-title {
+    font-size: var(--font-size-40);
+    font-weight: var(--font-weight-regular);
+    margin-bottom: var(--spacing-medium);
+}
+
+.hero-images {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-medium);
+    margin-bottom: var(--spacing-medium);
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: var(--font-size-16);    
+    line-height: 22px;                
+    color: var(--color-primary);      
+}

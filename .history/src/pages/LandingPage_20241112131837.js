@@ -16,27 +16,22 @@ export default class LandingPage {
             const pageData = await this.getDataService.getData();
             const page = pageData.page;
 
-            // Header Section
-            const headerSection = document.createElement('div');
-            headerSection.className = 'header-section';
+            // Render Header (if needed)
             const header = new Header({ title: page.header.title });
-            headerSection.appendChild(header.render());
-            container.appendChild(headerSection);
+            container.appendChild(header.render());
 
-            // Hero Section
-            const heroWrapper = document.createElement('div');
-            heroWrapper.className = 'hero-wrapper';
+            // Render HeroSection (if needed)
             const heroSection = new HeroSection({
                 images: page.heroSection.images,
                 content: page.heroSection.content,
             });
-            heroWrapper.appendChild(heroSection.render());
-            container.appendChild(heroWrapper);
+            container.appendChild(heroSection.render());
 
-            // Content Sections Container
+            // Create container for content sections
             const contentSectionsContainer = document.createElement('div');
             contentSectionsContainer.className = 'content-sections-container';
 
+            // Render ContentSections in grid
             if (Array.isArray(page.contentSections)) {
                 page.contentSections.forEach((sectionData, index) => {
                     const contentSection = new ContentSection({

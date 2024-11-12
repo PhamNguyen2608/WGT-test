@@ -33,6 +33,7 @@
 .content-title {
     font-size: var(--font-size-64);           
     font-weight: var(--font-weight-regular);          
+    line-height: var(--line-height-2-0);         
     color: var(--color-primary);            
     margin-bottom: var(--spacing-small);
 }
@@ -48,6 +49,5 @@
 .content-description {
     font-size: var(--font-size-14);                
     font-weight: var(--font-weight-regular);               
-    line-height: var(--line-height-22);             
     color: var(--color-secondary);                
 }

@@ -19,7 +19,7 @@
     --font-size-20: 20px;
     --font-size-24: 24px;
     --font-size-40: 40px;
-    --font-size-64: 64px;
+
     /* Line height */
     --line-height-1-4: 1.4;
     --line-height-1-6: 1.6;
@@ -31,5 +31,4 @@
     --spacing-medium: 16px;
     --spacing-large: 32px;
     --spacing-x-large: 49px;
-    --spacing-xx-large: 80px;
 }

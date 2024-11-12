@@ -1,0 +1,38 @@
+/* Main container */
+.landing-page {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 31.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header section */
+.header {
+    width: 100%;
+    padding: 24px 0;
+    margin-bottom: 40px;
+}
+
+.header__title {
+    font-size: var(--font-size-32);
+    color: var(--color-primary);
+    text-align: center;
+}
+
+/* Hero section container */
+.hero-section {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+/* Content sections grid container */
+.content-sections-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 684px); 
+    grid-template-rows: repeat(2, 800px);
+    gap: 32px; 
+    justify-content: center; 
+} 

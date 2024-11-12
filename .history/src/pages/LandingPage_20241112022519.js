@@ -15,40 +15,33 @@ export default class LandingPage {
         try {
             const pageData = await this.getDataService.getData();
             const page = pageData.page;
-
-            // Header Section
-            const headerSection = document.createElement('div');
-            headerSection.className = 'header-section';
+            console.log(pageData)
+            // Render Header
             const header = new Header({ title: page.header.title });
-            headerSection.appendChild(header.render());
-            container.appendChild(headerSection);
+            container.appendChild(header.render());
 
-            // Hero Section
-            const heroWrapper = document.createElement('div');
-            heroWrapper.className = 'hero-wrapper';
+            // Render HeroSection
             const heroSection = new HeroSection({
                 images: page.heroSection.images,
                 content: page.heroSection.content,
             });
-            heroWrapper.appendChild(heroSection.render());
-            container.appendChild(heroWrapper);
-
-            // Content Sections Container
-            const contentSectionsContainer = document.createElement('div');
-            contentSectionsContainer.className = 'content-sections-container';
-
+            container.appendChild(heroSection.render());
+            const contentWrapper = document.createElement('div');
+            contentWrapper.className = 'content-container';
+            // Render ContentSections
             if (Array.isArray(page.contentSections)) {
                 page.contentSections.forEach((sectionData, index) => {
                     const contentSection = new ContentSection({
                         image: sectionData.image,
-                        text: sectionData.text,
-                        reverse: index % 2 === 1,
+                        text: sectionData.text, 
+                        reverse: index % 2 === 1, 
                     });
-                    contentSectionsContainer.appendChild(contentSection.render());
+                    container.appendChild(contentSection.render());
                 });
             }
-
-            container.appendChild(contentSectionsContainer);
+            else {
+                console.warn('Content sections are not an array:', page.contentSections);
+            }
         } catch (error) {
             console.error('Error rendering LandingPage:', error);
             container.textContent = 'Failed to load content.';

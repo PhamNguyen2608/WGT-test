@@ -1,5 +1,6 @@
 .hero-section {
     text-align: center;
+    padding: var(--spacing-large) 0;
 }
 
 .hero-title {
@@ -12,24 +13,14 @@
     display: flex;
     justify-content: center;
     gap: var(--spacing-medium);
-    margin-bottom: var(--spacing-x-large);
-}
-
-.hero-images img {
+    margin-bottom: var(--spacing-medium);
     border-radius: 16px;
-    width: auto;
-    height: auto;
 }
 
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
-    font-size: var(--font-size-16);  
-    font-weight: var(--font-weight-regular);
-    line-height: 22px;
-    color: var(--color-primary);
-    text-align: center;
-    white-space: pre-wrap;
-    margin-block-start: var(--spacing-large);
+    font-size: var(--font-size-16);    
+    line-height: 22px;                
+    color: var(--color-primary);      
 }
-

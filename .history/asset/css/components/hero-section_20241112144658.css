@@ -32,4 +32,6 @@
     white-space: pre-wrap;
     margin-block-start: var(--spacing-large);
 }
-
+.hero-content p + p {
+    margin-top: var(--spacing-x-large); 
+}
