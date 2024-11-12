@@ -30,9 +30,8 @@
     color: var(--color-primary);
     text-align: center;
     white-space: pre-wrap;
-    margin-block-start: var(--spacing-large);
 }
 
 .hero-content p {
-    margin-bottom: var(--spacing-medium); 
+    margin-bottom: var(--spacing-large); 
 }

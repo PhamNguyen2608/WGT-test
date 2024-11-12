@@ -29,10 +29,14 @@
     line-height: 22px;
     color: var(--color-primary);
     text-align: center;
-    white-space: pre-wrap;
     margin-block-start: var(--spacing-large);
 }
 
-.hero-content p {
-    margin-bottom: var(--spacing-medium); 
+.hero-content > p {
+    margin-bottom: var(--spacing-x-large); /* 48px */
 }
+
+.hero-content > p:last-child {
+    margin-bottom: 0;
+}
+

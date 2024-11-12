@@ -33,6 +33,7 @@
     margin-block-start: var(--spacing-large);
 }
 
-.hero-content p {
-    margin-bottom: var(--spacing-medium); 
+.hero-content br {
+    display: block;         
+    margin-bottom: 20px;    
 }
