@@ -5,31 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
     <link rel="stylesheet" href="asset/css/style.css">
-    <style>
-        #app {
-            display: none;
-        }
-        
-        .loading {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: white;
-        }
-    </style>
     <script>
         function checkPassword() {
             const password = prompt("Vui lòng nhập mật khẩu để truy cập trang này:");
-            const correctPassword = "wgentech-test";
+            const correctPassword = "wgentech"; 
 
-            if (password === correctPassword) {
-                document.getElementById('app').style.display = 'block';
-                document.getElementById('loading').remove();
-            } else {
+            if (password !== correctPassword) {
                 alert("Mật khẩu không chính xác! Bạn sẽ được chuyển hướng đến GitHub.");
-                window.location.href = "https://github.com";
+                window.location.href = "https://github.com"; 
             }
         }
 
@@ -37,7 +20,6 @@
     </script>
 </head>
 <body>
-    <div id="loading" class="loading"></div>
     <div id="app"></div>
     <script type="module" src="src/js/main.js"></script>
 </body>
