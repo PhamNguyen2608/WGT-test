@@ -8,7 +8,6 @@
 @import './components/header.css';
 @import './components/hero-section.css';
 @import './components/content-section.css';
-@import './layout.css';
 
 /* Responsive styles */
 @import './responsive/layout.css';

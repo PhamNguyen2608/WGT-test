@@ -9,7 +9,8 @@
     border-radius: 12px;
     overflow: hidden;
     gap: var(--spacing-small);
-    margin: 0 auto;
+    margin-bottom:  var(--spacing-small) ;
+
 }
 
 .content-section.reverse {

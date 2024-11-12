@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+  .hero-images {
+    flex-direction: column;
+    gap: var(--spacing-medium);
+  }
+
+  .hero-images img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .hero-content {
+    max-width: 400px;
+    padding: 0 var(--spacing-medium);
+  }
+} 

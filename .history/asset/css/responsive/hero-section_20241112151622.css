@@ -1,0 +1,20 @@
+@media (--mobile) {
+  .hero-content {
+    max-width: 100%;
+    padding: 0 var(--spacing-medium);
+  }
+  
+  .hero-images {
+    flex-direction: column;
+  }
+}
+
+@media (--tablet) {
+  .hero-content {
+    max-width: 80%;
+  }
+  
+  .hero-images {
+    flex-direction: row;
+  }
+} 
